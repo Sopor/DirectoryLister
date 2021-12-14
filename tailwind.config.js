@@ -3,8 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
     darkMode: 'class',
-    mode: 'jit',
-    purge: {
+    content: {
         mode: 'all',
         content: [
             'app/resources/**/*.{js,scss}',
@@ -19,7 +18,7 @@ module.exports = {
         extend: {
             colors: {
                 blue: colors.sky,
-                gray: colors.blueGray,
+                gray: colors.slate,
                 purple: colors.violet,
             },
             fontFamily: {
@@ -32,9 +31,5 @@ module.exports = {
                 twitter: '#1DA1F2'
             }
         }
-    },
-    variants: {
-        backgroundOpacity: ['dark'],
-        visibility: ['responsive', 'hover', 'group-hover']
     }
 };
